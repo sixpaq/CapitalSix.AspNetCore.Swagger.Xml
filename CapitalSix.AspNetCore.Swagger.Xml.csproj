@@ -17,7 +17,7 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <License>none</License>
         <Description>This module corrects the XML handling in Swagger in AspNetCore. The default Swagger implementation does not handle XML annotation attributes correctly. This module handles XmlRoot, XmlElement and XmlIgnore attributes in data models.</Description>
-        <PackageTags>dotnet-new;sagger;xml;attributes</PackageTags>
+        <PackageTags>dotnet-new;swagger;xml;attributes</PackageTags>
         <IncludeContentInPack>true</IncludeContentInPack>
         <IncludeBuildOutput>true</IncludeBuildOutput>
         <ContentTargetFolders>content</ContentTargetFolders>

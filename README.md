@@ -2,6 +2,8 @@
 
 This module corrects the XML handling in Swagger in AspNetCore. The default Swagger implementation does not handle XML annotation attributes correctly. This module handles XmlRoot, XmlElement and XmlIgnore attributes in data models.
 
+The module should be used when endpoints consumes an XML or produces an XML.
+
 ### How to configure the module.
 ```c#
 void ConfigureServices(IServicesCollection services)
