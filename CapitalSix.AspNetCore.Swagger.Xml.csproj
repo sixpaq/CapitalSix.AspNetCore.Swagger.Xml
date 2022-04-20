@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageVersion>1.0</PackageVersion>
+        <PackageId>CapitalSix.AspNetCore.Swagger.Xml</PackageId>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Title>AspNetCore middleware for generic error handling</Title>
+        <RepositoryUrl>https://github.com/sixpaq/capitalsix.aspnetcore.swagger.xml</RepositoryUrl>
+        <RepositoryType>git</RepositoryType> 
+        <Authors>Mike Wijnen</Authors>
+        <Company>CapitalSix</Company>
+        <Nullable>enable</Nullable>
+        <RootNamespace>CapitalSix.AspNetCore.Swagger.Xml</RootNamespace>
+        <PackageLicense>none</PackageLicense>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <License>none</License>
+        <Description>This module corrects the XML handling in Swagger in AspNetCore. The default Swagger implementation does not handle XML annotation attributes correctly. This module handles XmlRoot, XmlElement and XmlIgnore attributes in data models.</Description>
+        <PackageTags>dotnet-new;sagger;xml;attributes</PackageTags>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>true</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Filters" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="README.md" Pack="true" Visible="false" PackagePath="README.md" />
+    </ItemGroup>
+</Project>
