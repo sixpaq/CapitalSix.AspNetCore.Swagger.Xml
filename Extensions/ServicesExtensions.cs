@@ -1,3 +1,4 @@
+using CapitalSix.AspNetCore.Swagger.AutoResponse;
 using System.Reflection;
 using System.Xml.Serialization;
 using Microsoft.Extensions.DependencyInjection;
