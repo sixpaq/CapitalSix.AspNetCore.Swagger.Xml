@@ -36,7 +36,9 @@ public class XmlSchemaFilter : ISchemaFilter
                 var swaggerReferenceTypeAttribute = customAttributes
                     .OfType<SwaggerXmlSchemaTypeAttribute>()
                     .SingleOrDefault();
-                var elementName = xmlElementAttribute?.ElementName ?? property.Name;
+                var elementName = !string.IsNullOrEmpty(xmlElementAttribute?.ElementName)
+                    ? xmlElementAttribute.ElementName
+                    : property.Name;
                 UpdateSchema(schemaProperty.Value, elementName, swaggerReferenceTypeAttribute);
                 return (Property: property, ElementAttribute: xmlElementAttribute, ElementName: elementName, Schema: schemaProperty.Value);
             })
